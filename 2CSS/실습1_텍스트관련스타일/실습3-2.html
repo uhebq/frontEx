@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>꿀사과</title>
+</head>
+    <style>
+        *{
+            /* 모든 요소의 마진을 제거 */
+            margin: 0px;
+        }
+        .imgBg{
+            margin: 0px auto;
+            /* 박스의 크기를 지정 후 border 값을 주어 영역을 확인 */
+            /* border:1px solid red; */
+            width: 600px;
+            height: 440px;
+            background-image: url(../images/apple-bg.jpg);
+            background-size: cover;
+            /* 부모 요소를 기준으로 자식 요소를 배치 */
+            position: relative;
+        }
+        .imgContent{
+            width: 100%;
+            height: 170px;
+            /* border: 1px solid blue; */
+            background-color: rgba(0, 0, 0, 0.49);
+            /* absolute 설정시 가장 가까운 relative를 연결 */
+            position: absolute;
+            bottom: 0px;
+        }
+        h1{
+            /* 브라우저의 기본속성(마진값)을 제거 */
+            margin: 0px;
+            /* border: 1px solid yellow; */
+            font-size: 2.2em;
+            height: 60px;
+            line-height: 60px;
+            padding-left: 50px;
+            color: white;
+            
+        }
+        p{
+            /* border: 1px solid pink; */
+            margin: 0px;
+            height: 110px;
+            padding-top: 27px;
+            padding-left: 37px;
+            font-size: 1.1em;
+            color: rgb(223, 182, 40);
+            font-family: "고딕";
+        }
+    </style>
+<body>
+    <div class='imgBg'>
+        <div class='imgContent'>
+            <h1>가정용 꿀사과</h1>
+            <p>흠집이 있고 약간은 못생겼지만 맛과 영양은 그대로입니다.<br>
+                질좋은 사과를 저렴하게 즐겨보세요</p>
+        </div>
+    </div>
+</body>
+</html>
